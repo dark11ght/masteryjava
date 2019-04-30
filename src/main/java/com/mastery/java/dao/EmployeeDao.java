@@ -35,11 +35,12 @@ public class EmployeeDao {
     }
 
     public void delEmployeeById(int id) {
+        KeyHolder holder = new GeneratedKeyHolder();
         String sql = "DELETE from employee where employee_id = :id";
         MapSqlParameterSource params = new MapSqlParameterSource();
         params.addValue("id", id);
 
-        jdbcTemplate.queryForObject(sql, params, profileMapper);
+        jdbcTemplate.update(sql, params, holder, new String[]{"employee_id"});
     }
 
 

@@ -1,8 +1,11 @@
 package com.mastery.java.entity;
 
-import com.fasterxml.jackson.annotation.JsonCreator;
+
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import com.fasterxml.jackson.annotation.JsonProperty;
+
+
+import java.time.LocalDate;
+
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Employee {
@@ -13,28 +16,13 @@ public class Employee {
     private int department_id;
     private String job_title;
     private String gender;
-    private String date_of_birth;
+    private LocalDate date_of_birth;
 
 
     public Employee() {
     }
 
-   /* @JsonCreator
-    public Employee(@JsonProperty("employee_id") int employee_id,
-                    @JsonProperty("first_name") String first_name,
-                    @JsonProperty("last_name") String last_name,
-                    @JsonProperty("department_id") int department_id,
-                    @JsonProperty("job_title") String job_title,
-                    @JsonProperty("gender") String gender,
-                    @JsonProperty("date_of_birth") String date_of_birth) {
-        this.employee_id = employee_id;
-        this.first_name = first_name;
-        this.last_name = last_name;
-        this.department_id = department_id;
-        this.job_title = job_title;
-        this.gender = gender;
-        this.date_of_birth = date_of_birth;
-    }*/
+
 
     public int getEmployee_id() {
         return employee_id;
@@ -84,12 +72,12 @@ public class Employee {
         this.gender = gender;
     }
 
-    public String getDate_of_birth() {
+    public LocalDate getDate_of_birth() {
         return date_of_birth;
     }
 
     public void setDate_of_birth(String date_of_birth) {
-        this.date_of_birth = date_of_birth;
+        this.date_of_birth = LocalDate.parse(date_of_birth);
     }
 
 
