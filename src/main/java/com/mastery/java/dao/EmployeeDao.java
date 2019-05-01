@@ -1,6 +1,6 @@
 package com.mastery.java.dao;
 
-import com.mastery.java.entity.Employee;
+import com.mastery.java.dto.Employee;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.namedparam.MapSqlParameterSource;
 import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;

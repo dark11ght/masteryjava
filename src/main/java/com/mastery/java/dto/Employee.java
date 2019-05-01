@@ -1,4 +1,4 @@
-package com.mastery.java.entity;
+package com.mastery.java.dto;
 
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;

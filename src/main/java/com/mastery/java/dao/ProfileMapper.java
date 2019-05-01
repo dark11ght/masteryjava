@@ -1,6 +1,6 @@
 package com.mastery.java.dao;
 
-import com.mastery.java.entity.Employee;
+import com.mastery.java.dto.Employee;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Component;
 

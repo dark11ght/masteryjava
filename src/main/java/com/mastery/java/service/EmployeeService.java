@@ -2,7 +2,7 @@ package com.mastery.java.service;
 
 
 import com.mastery.java.dao.EmployeeDao;
-import com.mastery.java.entity.Employee;
+import com.mastery.java.dto.Employee;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;
