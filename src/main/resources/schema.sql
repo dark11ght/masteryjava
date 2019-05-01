@@ -1,5 +1,5 @@
 
-CREATE TABLE employee
+CREATE TABLE public.employee
 (
     employee_id serial NOT NULL,
     first_name VARCHAR(50) NOT NULL,
@@ -38,3 +38,4 @@ INSERT INTO employee (
  "gender",
  "date_of_birth")
  VALUES ( 'Dmitry', 'Ivanov', 3, 'manager', 'male', '2001-11-21');
+
