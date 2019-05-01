@@ -1,5 +1,7 @@
 BEGIN;
 
+CREATE DATABASE employeedb;
+
 CREATE TABLE public.employee
 (
     employee_id serial NOT NULL,
