@@ -1,8 +1,5 @@
-BEGIN;
 
-CREATE DATABASE employeedb;
-
-CREATE TABLE public.employee
+CREATE TABLE employee
 (
     employee_id serial NOT NULL,
     first_name VARCHAR(50) NOT NULL,
